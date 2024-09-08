@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "APP",
+    "slug": "APP",
+    "scheme": "APP",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/SPLASH.png",
+      "resizeMode": "contain",
+      "backgroundColor": "black"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "usesAppleSignIn": true,
+      "iosUrlScheme": "com.googleusercontent.apps._some_id_here_",
+      "config": {
+        "nsAllowsArbitraryLoads": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff",
+        "config": {
+        "nsAllowsArbitraryLoads": true
+      },
+      "permissions": ["INTERNET"]
+      },
+      "package": "com.agzzin.APP"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+     ["expo-apple-authentication"],
+     "@react-native-google-signin/google-signin"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a88e0e8b-319a-4c7d-840f-a3f6afe76d7c"
+      }
+    }
+  }
+}
